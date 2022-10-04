@@ -1133,3 +1133,7 @@ void LLVMPassManagerBuilderPopulateLTOPassManager(LLVMPassManagerBuilderRef PMB,
 
   Builder->populateLTOPassManager(*LPM);
 }
+
+#ifdef _WIN32
+#include "../EosioApply/EosioApply.cpp"
+#endif
